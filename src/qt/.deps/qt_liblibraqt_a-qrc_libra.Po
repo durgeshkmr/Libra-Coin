@@ -1,0 +1,4 @@
+qt/qt_liblibraqt_a-qrc_libra.o: qt/qrc_libra.cpp \
+ /usr/include/stdc-predef.h
+
+/usr/include/stdc-predef.h:

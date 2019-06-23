@@ -1,0 +1,33 @@
+# /etc/conf.d/librad: config file for /etc/init.d/librad
+
+# Config file location
+#LIBRAD_CONFIGFILE="/etc/libra/libra.conf"
+
+# What directory to write pidfile to?  (created and owned by $LIBRAD_USER)
+#LIBRAD_PIDDIR="/var/run/librad"
+
+# What filename to give the pidfile
+#LIBRAD_PIDFILE="${LIBRAD_PIDDIR}/librad.pid"
+
+# Where to write librad data (be mindful that the blockchain is large)
+#LIBRAD_DATADIR="/var/lib/librad"
+
+# User and group to own librad process
+#LIBRAD_USER="libra"
+#LIBRAD_GROUP="libra"
+
+# Path to librad executable
+#LIBRAD_BIN="/usr/bin/librad"
+
+# Nice value to run librad under
+#LIBRAD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#LIBRAD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for librad to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+LIBRAD_SIGTERM_TIMEOUT=60

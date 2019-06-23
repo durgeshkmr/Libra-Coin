@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Libra Core consensus library
+Description: Library for the Libra consensus protocol.
+Version: 0.17.1
+Libs: -L${libdir} -llibraconsensus
+Cflags: -I${includedir}
+Requires.private: libcrypto
